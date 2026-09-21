@@ -281,6 +281,181 @@
       border: 1px solid #18384f;
     }
 
+    /* GIVEAWAY */
+
+    .giveaway {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 5%, rgba(42,181,239,.20), transparent 31%),
+        linear-gradient(145deg, #0a2031, #071420 70%);
+    }
+
+    .giveaway:before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(85,202,255,.13);
+      border-radius: 28px;
+      pointer-events: none;
+    }
+
+    .giveaway .wrap {
+      position: relative;
+    }
+
+    .giveaway-badge {
+      display: table;
+      margin: 0 auto 16px;
+      padding: 6px 12px;
+      border: 1px solid rgba(85,202,255,.45);
+      border-radius: 999px;
+      color: #82d9ff;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1.3px;
+    }
+
+    .giveaway-panel {
+      max-width: 880px;
+      margin: auto;
+      background: rgba(5, 18, 29, .76);
+      border: 1px solid #24516d;
+      border-radius: 24px;
+      padding: 30px;
+      box-shadow: 0 20px 55px rgba(0,0,0,.25);
+    }
+
+    .giveaway-status {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 26px;
+      align-items: center;
+      padding-bottom: 26px;
+      border-bottom: 1px solid #18384f;
+    }
+
+    .progress-label {
+      color: #a9c0cf;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .4px;
+    }
+
+    .progress-count {
+      margin: 3px 0;
+      color: #fff;
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 900;
+      line-height: 1.1;
+    }
+
+    .progress-count span { color: #55caff; }
+
+    .progress-track {
+      height: 11px;
+      margin-top: 14px;
+      overflow: hidden;
+      background: #0a1a29;
+      border: 1px solid #21455d;
+      border-radius: 999px;
+    }
+
+    .progress-fill {
+      width: 0;
+      height: 100%;
+      background: linear-gradient(90deg, #299ed2, #70dcff);
+      border-radius: inherit;
+      transition: width .35s ease;
+    }
+
+    .giveaway-meta {
+      display: grid;
+      gap: 11px;
+    }
+
+    .meta-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: #9fb5c5;
+      font-size: 14px;
+    }
+
+    .meta-row strong { color: #e5f7ff; }
+
+    .wallet-action {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      padding: 25px 0;
+    }
+
+    .wallet-copy h3 { margin: 0 0 5px; color: #eaf8ff; }
+    .wallet-copy p { margin: 0; color: #9fb5c5; }
+
+    .wallet-button, .claim-button {
+      appearance: none;
+      border: 0;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .wallet-button {
+      min-width: 188px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      background: #2ab5ef;
+      color: #00131e;
+      font-weight: 900;
+      transition: .2s ease;
+    }
+
+    .wallet-button:hover { transform: translateY(-2px); filter: brightness(1.08); }
+
+    .wallet-button:focus-visible, .claim-button:focus-visible {
+      outline: 3px solid #b9edff;
+      outline-offset: 3px;
+    }
+
+    .wallet-connected {
+      color: #83ddff;
+      font-family: monospace;
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+    .claim-area {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid #18384f;
+    }
+
+    .claim-button {
+      padding: 13px 22px;
+      border-radius: 999px;
+      background: #274052;
+      color: #91a9b9;
+      font-weight: 900;
+      cursor: not-allowed;
+    }
+
+    .security-notice {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border: 1px solid rgba(255, 188, 83, .48);
+      border-radius: 14px;
+      background: rgba(87, 54, 7, .22);
+      color: #ffe3ad;
+      font-size: 14px;
+    }
+
+    .security-notice strong { color: #fff2d2; }
+
     /* ROADMAP */
 
     .step {
@@ -366,6 +541,18 @@
         grid-template-columns: 1fr;
       }
 
+      .giveaway-status,
+      .wallet-action {
+        grid-template-columns: 1fr;
+      }
+
+      .wallet-button { width: 100%; }
+
+      .claim-area {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
       .section {
         padding: 60px 0;
       }
@@ -390,6 +577,7 @@
       <div class="links">
         <a href="#about">About</a>
         <a href="#token">Token</a>
+        <a href="#giveaway">Giveaway</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#community">Community</a>
         <a href="#paper">Whitepaper</a>
@@ -547,6 +735,66 @@
             Always verify the contract address through official
             NEXTWAVE channels before interacting with the token.
           </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GIVEAWAY -->
+
+    <section class="section giveaway" id="giveaway" aria-labelledby="giveaway-title">
+
+      <div class="wrap">
+
+        <div class="giveaway-badge">COMMUNITY GIVEAWAY</div>
+
+        <h2 id="giveaway-title">500 Wallet Giveaway</h2>
+
+        <p class="lead">
+          A planned NWAV community distribution for up to 500 eligible wallets.
+          Connect a compatible wallet to prepare—claiming remains unavailable until
+          an official, verifiable distribution mechanism is published.
+        </p>
+
+        <div class="giveaway-panel">
+
+          <div class="giveaway-status">
+            <div>
+              <div class="progress-label">VERIFIED CLAIM PROGRESS</div>
+              <div class="progress-count"><span id="claim-count">—</span> / 500</div>
+              <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+              <p class="tiny" id="progress-note">Progress will be published only after the official distribution system is configured.</p>
+            </div>
+
+            <div class="giveaway-meta">
+              <div class="meta-row"><span>Claim limit</span><strong>1 per wallet</strong></div>
+              <div class="meta-row"><span>Duplicate protection</span><strong>Pending verified enforcement</strong></div>
+              <div class="meta-row"><span>Wallet support</span><strong>Browser + Trust Wallet</strong></div>
+            </div>
+          </div>
+
+          <div class="wallet-action">
+            <div class="wallet-copy">
+              <h3>Connect your wallet</h3>
+              <p id="wallet-status">Connect with an installed compatible wallet. Your wallet address stays in your browser and is never stored by this page.</p>
+            </div>
+            <button class="wallet-button" id="connect-wallet" type="button">CONNECT WALLET</button>
+          </div>
+
+          <div class="claim-area">
+            <div>
+              <strong>Claiming is not live yet.</strong>
+              <div class="tiny">When activated, eligibility and one-claim-per-wallet protection must be enforced by the official on-chain contract or verified backend.</div>
+            </div>
+            <button class="claim-button" type="button" disabled aria-disabled="true" title="Claiming is unavailable until an official distribution mechanism is configured.">CLAIM NWAV — NOT LIVE</button>
+          </div>
+
+          <div class="security-notice">
+            <strong>Security reminder:</strong> NEXTWAVE will never ask for your seed phrase or private key. Never enter or share either of them—connecting a wallet only asks the wallet app for permission to share its public address.
+          </div>
 
         </div>
 
@@ -861,6 +1109,48 @@
     </div>
 
   </footer>
+
+  <script>
+    (function () {
+      const connectButton = document.getElementById('connect-wallet');
+      const walletStatus = document.getElementById('wallet-status');
+
+      if (!connectButton || !walletStatus) return;
+
+      const provider = window.ethereum;
+
+      function shortAddress(address) {
+        return address.slice(0, 6) + '…' + address.slice(-4);
+      }
+
+      function showConnected(address) {
+        walletStatus.textContent = 'Connected: ' + shortAddress(address) + '. Claiming is not live; no transaction will be requested.';
+        connectButton.textContent = 'WALLET CONNECTED';
+        connectButton.disabled = true;
+        connectButton.setAttribute('aria-disabled', 'true');
+      }
+
+      connectButton.addEventListener('click', async function () {
+        if (!provider || !provider.request) {
+          walletStatus.textContent = 'No compatible wallet was detected. Open this page in Trust Wallet or install a compatible browser wallet, then try again.';
+          return;
+        }
+
+        connectButton.disabled = true;
+        connectButton.textContent = 'CONNECTING…';
+
+        try {
+          const accounts = await provider.request({ method: 'eth_requestAccounts' });
+          if (accounts && accounts[0]) showConnected(accounts[0]);
+          else throw new Error('No wallet address was returned.');
+        } catch (error) {
+          walletStatus.textContent = 'Wallet connection was not completed. No information was saved and no transaction was requested.';
+          connectButton.disabled = false;
+          connectButton.textContent = 'CONNECT WALLET';
+        }
+      });
+    }());
+  </script>
 
 </body>
 </html>
