@@ -8,7 +8,10 @@
 
   <title>NEXTWAVE ($NWAV) | Community-Driven Memecoin on Robinhood Chain</title>
 
-  <meta name="description" content="NEXTWAVE ($NWAV) is a community-driven memecoin built on Robinhood Chain. Explore the official NWAV website, token information, roadmap, community and project updates.">
+  <meta
+    name="description"
+    content="NEXTWAVE ($NWAV) is a community-driven memecoin built on Robinhood Chain. Explore the official NWAV website, token information, giveaway, roadmap and community."
+  >
 
   <meta name="robots" content="index, follow">
 
@@ -16,29 +19,21 @@
 
   <meta name="theme-color" content="#06111d">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://nwavcoin.com/">
-  <meta property="og:title" content="NEXTWAVE ($NWAV) | Robinhood Chain Memecoin">
-  <meta property="og:description" content="The next wave is here. Explore NEXTWAVE ($NWAV), a community-driven memecoin building on Robinhood Chain.">
+  <meta property="og:title" content="NEXTWAVE ($NWAV) | Robinhood Chain">
+  <meta
+    property="og:description"
+    content="NEXTWAVE ($NWAV) — community-driven memecoin building on Robinhood Chain."
+  >
   <meta property="og:site_name" content="NEXTWAVE ($NWAV)">
 
-  <!-- X / Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="NEXTWAVE ($NWAV) | Robinhood Chain">
-  <meta name="twitter:description" content="Community-driven memecoin building on Robinhood Chain. 🌊">
-
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "NEXTWAVE ($NWAV)",
-    "alternateName": "NWAV",
-    "url": "https://nwavcoin.com/",
-    "description": "Official website of NEXTWAVE ($NWAV), a community-driven memecoin built on Robinhood Chain."
-  }
-  </script>
+  <meta name="twitter:title" content="NEXTWAVE ($NWAV)">
+  <meta
+    name="twitter:description"
+    content="The next wave is here. 🌊"
+  >
 
   <style>
 
@@ -54,7 +49,9 @@
       margin: 0;
       background: #06111d;
       color: #edf8ff;
-      font: 16px/1.7 Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
     }
 
     a {
@@ -62,24 +59,30 @@
       text-decoration: none;
     }
 
+    button {
+      font-family: inherit;
+    }
+
     .wrap {
       width: min(1100px, calc(100% - 40px));
       margin: auto;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     .nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(6,17,29,.94);
+      background: rgba(6,17,29,.96);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid #17364d;
-      padding: 17px 0;
+      padding: 16px 0;
     }
 
-    .nav .wrap {
+    .nav-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -87,7 +90,7 @@
     }
 
     .brand {
-      font-size: 20px;
+      font-size: 21px;
       font-weight: 900;
       letter-spacing: .5px;
     }
@@ -98,7 +101,7 @@
 
     .links {
       display: flex;
-      gap: 22px;
+      gap: 20px;
       color: #a9c0cf;
       font-size: 14px;
       font-weight: 700;
@@ -108,7 +111,9 @@
       color: #55caff;
     }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       position: relative;
@@ -116,7 +121,12 @@
       text-align: center;
       padding: 125px 0 110px;
       background:
-        radial-gradient(circle at 50% 20%, #15567e 0%, #0b263b 35%, #06111d 72%);
+        radial-gradient(
+          circle at 50% 20%,
+          #15567e 0%,
+          #0b263b 35%,
+          #06111d 72%
+        );
     }
 
     .hero:after {
@@ -148,7 +158,12 @@
       line-height: .9;
       margin: 20px 0 25px;
       letter-spacing: -5px;
-      background: linear-gradient(90deg,#ffffff,#54caff,#ffffff);
+      background: linear-gradient(
+        90deg,
+        #ffffff,
+        #54caff,
+        #ffffff
+      );
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -196,7 +211,9 @@
       color: #7f97a8;
     }
 
-    /* SECTIONS */
+    /* =========================
+       SECTIONS
+    ========================= */
 
     .section {
       padding: 80px 0;
@@ -213,12 +230,14 @@
     .lead {
       text-align: center;
       color: #9fb5c5;
-      max-width: 760px;
+      max-width: 780px;
       margin: 0 auto 40px;
       font-size: 18px;
     }
 
-    /* CARDS */
+    /* =========================
+       CARDS
+    ========================= */
 
     .grid {
       display: grid;
@@ -227,7 +246,12 @@
     }
 
     .card {
-      background: linear-gradient(145deg,#0b1d2d,#081522);
+      background:
+        linear-gradient(
+          145deg,
+          #0b1d2d,
+          #081522
+        );
       border: 1px solid #18384f;
       border-radius: 20px;
       padding: 26px;
@@ -244,12 +268,15 @@
       color: #b4c7d3;
     }
 
-    /* TOKEN STATS */
+    /* =========================
+       TOKEN
+    ========================= */
 
     .stats {
       display: grid;
       grid-template-columns: repeat(4,1fr);
       gap: 15px;
+      margin-bottom: 25px;
     }
 
     .stat {
@@ -281,14 +308,24 @@
       border: 1px solid #18384f;
     }
 
-    /* GIVEAWAY */
+    /* =========================
+       GIVEAWAY
+    ========================= */
 
     .giveaway {
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at 12% 5%, rgba(42,181,239,.20), transparent 31%),
-        linear-gradient(145deg, #0a2031, #071420 70%);
+        radial-gradient(
+          circle at 12% 5%,
+          rgba(42,181,239,.20),
+          transparent 31%
+        ),
+        linear-gradient(
+          145deg,
+          #0a2031,
+          #071420 70%
+        );
     }
 
     .giveaway:before {
@@ -307,19 +344,20 @@
     .giveaway-badge {
       display: table;
       margin: 0 auto 16px;
-      padding: 6px 12px;
+      padding: 7px 14px;
       border: 1px solid rgba(85,202,255,.45);
       border-radius: 999px;
       color: #82d9ff;
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 1.3px;
+      text-align: center;
     }
 
     .giveaway-panel {
-      max-width: 880px;
+      max-width: 900px;
       margin: auto;
-      background: rgba(5, 18, 29, .76);
+      background: rgba(5,18,29,.82);
       border: 1px solid #24516d;
       border-radius: 24px;
       padding: 30px;
@@ -329,9 +367,9 @@
     .giveaway-status {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
-      gap: 26px;
+      gap: 30px;
       align-items: center;
-      padding-bottom: 26px;
+      padding-bottom: 28px;
       border-bottom: 1px solid #18384f;
     }
 
@@ -339,22 +377,20 @@
       color: #a9c0cf;
       font-size: 14px;
       font-weight: 800;
-      letter-spacing: .4px;
+      letter-spacing: .5px;
     }
 
     .progress-count {
-      margin: 3px 0;
+      margin: 4px 0;
       color: #fff;
-      font-size: clamp(36px, 6vw, 56px);
+      font-size: clamp(34px, 6vw, 55px);
       font-weight: 900;
       line-height: 1.1;
     }
 
-    .progress-count span { color: #55caff; }
-
     .progress-track {
       height: 11px;
-      margin-top: 14px;
+      margin-top: 15px;
       overflow: hidden;
       background: #0a1a29;
       border: 1px solid #21455d;
@@ -364,9 +400,12 @@
     .progress-fill {
       width: 0;
       height: 100%;
-      background: linear-gradient(90deg, #299ed2, #70dcff);
+      background: linear-gradient(
+        90deg,
+        #299ed2,
+        #70dcff
+      );
       border-radius: inherit;
-      transition: width .35s ease;
     }
 
     .giveaway-meta {
@@ -382,48 +421,56 @@
       font-size: 14px;
     }
 
-    .meta-row strong { color: #e5f7ff; }
+    .meta-row strong {
+      color: #e5f7ff;
+      text-align: right;
+    }
 
     .wallet-action {
       display: grid;
       grid-template-columns: 1fr auto;
-      gap: 18px;
+      gap: 20px;
       align-items: center;
-      padding: 25px 0;
+      padding: 27px 0;
     }
 
-    .wallet-copy h3 { margin: 0 0 5px; color: #eaf8ff; }
-    .wallet-copy p { margin: 0; color: #9fb5c5; }
+    .wallet-copy h3 {
+      margin: 0 0 5px;
+      color: #eaf8ff;
+    }
 
-    .wallet-button, .claim-button {
+    .wallet-copy p {
+      margin: 0;
+      color: #9fb5c5;
+    }
+
+    .wallet-button,
+    .claim-button {
       appearance: none;
       border: 0;
-      cursor: pointer;
       font: inherit;
     }
 
     .wallet-button {
-      min-width: 188px;
-      padding: 13px 20px;
+      min-width: 195px;
+      padding: 14px 20px;
       border-radius: 999px;
       background: #2ab5ef;
       color: #00131e;
       font-weight: 900;
+      cursor: pointer;
       transition: .2s ease;
     }
 
-    .wallet-button:hover { transform: translateY(-2px); filter: brightness(1.08); }
-
-    .wallet-button:focus-visible, .claim-button:focus-visible {
-      outline: 3px solid #b9edff;
-      outline-offset: 3px;
+    .wallet-button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
     }
 
-    .wallet-connected {
-      color: #83ddff;
-      font-family: monospace;
-      font-size: 14px;
-      word-break: break-all;
+    .wallet-button:disabled {
+      opacity: .75;
+      cursor: default;
+      transform: none;
     }
 
     .claim-area {
@@ -431,32 +478,83 @@
       justify-content: space-between;
       align-items: center;
       gap: 20px;
-      padding-top: 24px;
+      padding-top: 25px;
       border-top: 1px solid #18384f;
     }
 
+    .claim-area strong {
+      color: #ffffff;
+      font-size: 17px;
+    }
+
     .claim-button {
-      padding: 13px 22px;
+      padding: 14px 22px;
       border-radius: 999px;
       background: #274052;
       color: #91a9b9;
       font-weight: 900;
       cursor: not-allowed;
+      white-space: nowrap;
+    }
+
+    .referral-box {
+      display: none;
+      margin: 0 0 24px;
+      padding: 22px;
+      background: #081a29;
+      border: 1px solid #24516d;
+      border-radius: 18px;
+    }
+
+    .referral-box h3 {
+      margin-top: 0;
+      color: #55caff;
+    }
+
+    .referral-link {
+      margin-top: 12px;
+      padding: 14px;
+      border-radius: 10px;
+      background: #06111d;
+      border: 1px solid #18384f;
+      color: #8fdfff;
+      font-family: monospace;
+      word-break: break-all;
+    }
+
+    .copy-button {
+      margin-top: 12px;
+      padding: 11px 17px;
+      border: 1px solid #31556d;
+      background: transparent;
+      color: #ccefff;
+      border-radius: 999px;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .copy-button:hover {
+      border-color: #55caff;
+      color: #55caff;
     }
 
     .security-notice {
-      margin-top: 22px;
-      padding: 16px 18px;
-      border: 1px solid rgba(255, 188, 83, .48);
+      margin-top: 23px;
+      padding: 17px 18px;
+      border: 1px solid rgba(255,188,83,.48);
       border-radius: 14px;
-      background: rgba(87, 54, 7, .22);
+      background: rgba(87,54,7,.22);
       color: #ffe3ad;
       font-size: 14px;
     }
 
-    .security-notice strong { color: #fff2d2; }
+    .security-notice strong {
+      color: #fff2d2;
+    }
 
-    /* ROADMAP */
+    /* =========================
+       ROADMAP
+    ========================= */
 
     .step {
       padding: 25px 0;
@@ -476,7 +574,9 @@
       margin-bottom: 0;
     }
 
-    /* LINKS */
+    /* =========================
+       LINKS
+    ========================= */
 
     .linkbox {
       display: flex;
@@ -499,7 +599,9 @@
       color: #55caff;
     }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     .footer {
       text-align: center;
@@ -512,7 +614,9 @@
       font-size: 19px;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 760px) {
 
@@ -546,15 +650,30 @@
         grid-template-columns: 1fr;
       }
 
-      .wallet-button { width: 100%; }
+      .wallet-button {
+        width: 100%;
+      }
 
       .claim-area {
         align-items: flex-start;
         flex-direction: column;
       }
 
+      .claim-button {
+        white-space: normal;
+        width: 100%;
+      }
+
       .section {
         padding: 60px 0;
+      }
+
+      .giveaway-panel {
+        padding: 20px;
+      }
+
+      .giveaway:before {
+        inset: 8px;
       }
 
     }
@@ -563,33 +682,44 @@
 
 </head>
 
+
 <body>
 
-  <!-- NAVIGATION -->
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
 
   <nav class="nav">
-    <div class="wrap">
+
+    <div class="wrap nav-inner">
 
       <a class="brand" href="#top">
         NEXT<b>WAVE</b> 🌊
       </a>
 
       <div class="links">
+
         <a href="#about">About</a>
         <a href="#token">Token</a>
         <a href="#giveaway">Giveaway</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#community">Community</a>
         <a href="#paper">Whitepaper</a>
+
       </div>
 
     </div>
+
   </nav>
 
 
   <main id="top">
 
-    <!-- HERO -->
+
+    <!-- =========================
+         HERO
+    ========================= -->
 
     <header class="hero">
 
@@ -604,8 +734,8 @@
         <p>
           The next wave is here. NEXTWAVE ($NWAV) is a
           community-driven memecoin built on Robinhood Chain,
-          focused on community, creativity, participation and
-          building in public.
+          focused on community, creativity, participation
+          and building in public.
         </p>
 
         <div class="buttons">
@@ -619,8 +749,11 @@
             VIEW $NWAV ON FOMO
           </a>
 
-          <a class="btn alt" href="#paper">
-            READ THE WHITEPAPER
+          <a
+            class="btn alt"
+            href="#giveaway"
+          >
+            🎁 GIVEAWAY
           </a>
 
         </div>
@@ -634,7 +767,9 @@
     </header>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
     <section class="section" id="about">
 
@@ -644,38 +779,46 @@
 
         <p class="lead">
           NEXTWAVE ($NWAV) is a community-driven memecoin
-          built on Robinhood Chain. The project is focused on
-          growing a genuine community rather than making
-          unrealistic promises.
+          built on Robinhood Chain. The project focuses on
+          genuine community participation, creativity,
+          transparency and building in public.
         </p>
 
         <div class="grid">
 
           <div class="card">
+
             <h3>🌊 Community</h3>
+
             <p>
               NEXTWAVE is built around people, participation,
-              memes and community energy. The goal is to grow
-              a genuine community around $NWAV.
+              memes and community energy.
             </p>
+
           </div>
 
+
           <div class="card">
+
             <h3>🔨 Building in Public</h3>
+
             <p>
-              The project is being developed openly, with
-              progress, milestones and limitations communicated
-              as the community grows.
+              Development, milestones and limitations are
+              communicated openly as the project grows.
             </p>
+
           </div>
 
+
           <div class="card">
-            <h3>🎁 Community Giveaways</h3>
+
+            <h3>🎁 Community Activities</h3>
+
             <p>
-              Community activities and giveaways are intended
-              to introduce genuine participants and encourage
-              engagement with the NEXTWAVE community.
+              Community activities and giveaways are designed
+              to encourage genuine participation.
             </p>
+
           </div>
 
         </div>
@@ -685,7 +828,9 @@
     </section>
 
 
-    <!-- TOKEN -->
+    <!-- =========================
+         TOKEN
+    ========================= -->
 
     <section class="section" id="token">
 
@@ -694,192 +839,383 @@
         <h2>NEXTWAVE Token</h2>
 
         <p class="lead">
-          Simple and transparent information about the
-          $NWAV token.
+          Official information about the $NWAV token.
         </p>
 
-        <section class="section giveaway" id="giveaway" aria-labelledby="giveaway-title">
+        <div class="stats">
 
-  <div class="wrap">
+          <div class="stat">
+            <strong>1B</strong>
+            <small>Total Supply</small>
+          </div>
 
-    <div class="giveaway-badge">5,000,000 NWAV COMMUNITY GIVEAWAY</div>
+          <div class="stat">
+            <strong>NWAV</strong>
+            <small>Token Symbol</small>
+          </div>
 
-    <h2 id="giveaway-title">500 Random Winners</h2>
+          <div class="stat">
+            <strong>4663</strong>
+            <small>Robinhood Chain</small>
+          </div>
 
-    <p class="lead">
-      We are preparing a community giveaway of
-      <strong>5,000,000 NWAV</strong>.
-      500 randomly selected wallets will receive
-      <strong>10,000 NWAV each</strong>.
-      Every wallet receives one base entry, with additional entries available
-      through successful referrals.
-    </p>
+          <div class="stat">
+            <strong>ERC-20</strong>
+            <small>Token Standard</small>
+          </div>
 
-    <div class="giveaway-panel">
+        </div>
 
-      <div class="giveaway-status">
 
-        <div>
+        <div class="card">
 
-          <div class="progress-label">GIVEAWAY PRIZE POOL</div>
+          <h3>NWAV Contract Address</h3>
 
-          <div class="progress-count">5,000,000 NWAV</div>
-
-          <div class="progress-track" aria-hidden="true">
-            <div class="progress-fill" style="width:0%"></div>
+          <div class="contract">
+            0x8606499A1dde2812AeB58c22143111390a3eD052
           </div>
 
           <p class="tiny">
-            Giveaway launch is being prepared. The official entry and
-            distribution system will be activated after testing and verification.
+            Always verify the contract address through official
+            NEXTWAVE channels before interacting with the token.
           </p>
 
         </div>
-
-        <div class="giveaway-meta">
-
-          <div class="meta-row">
-            <span>Total prize pool</span>
-            <strong>5,000,000 NWAV</strong>
-          </div>
-
-          <div class="meta-row">
-            <span>Random winners</span>
-            <strong>500 wallets</strong>
-          </div>
-
-          <div class="meta-row">
-            <span>Prize per winner</span>
-            <strong>10,000 NWAV</strong>
-          </div>
-
-          <div class="meta-row">
-            <span>Base entry</span>
-            <strong>1 per wallet</strong>
-          </div>
-
-          <div class="meta-row">
-            <span>Referral entries</span>
-            <strong>+1 per successful referral</strong>
-          </div>
-
-          <div class="meta-row">
-            <span>Maximum entries</span>
-            <strong>5 per wallet</strong>
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="wallet-action">
-
-        <div class="wallet-copy">
-
-          <h3>Get Ready to Enter</h3>
-
-          <p id="wallet-status">
-            Connect your compatible wallet when the official giveaway opens.
-            No transaction or token transfer will be requested during this preparation stage.
-          </p>
-
-        </div>
-
-        <button
-          class="wallet-button"
-          id="connect-wallet"
-          type="button">
-          CONNECT WALLET
-        </button>
-
-      </div>
-
-
-      <div class="claim-area">
-
-        <div>
-
-          <strong>🎁 NWAV Giveaway — Coming Soon!</strong>
-
-          <div class="tiny">
-            500 random winners will each receive 10,000 NWAV.
-            Connect your wallet and get ready to enter.
-            Referral entries will be available when the giveaway officially opens.
-          </div>
-
-        </div>
-
-        <button
-          class="claim-button"
-          type="button"
-          disabled
-          aria-disabled="true"
-          title="The NWAV giveaway is being prepared.">
-          ENTER GIVEAWAY — COMING SOON
-        </button>
-
-      </div>
-
-
-      <div class="security-notice">
-
-        <strong>Security reminder:</strong>
-        NEXTWAVE will never ask for your seed phrase or private key.
-        Never enter or share either of them.
-        Connecting a wallet should only request permission to share its public address.
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
 
       </div>
 
     </section>
 
 
-    <!-- WHY NWAV -->
+    <!-- =========================
+         GIVEAWAY
+    ========================= -->
+
+    <section
+      class="section giveaway"
+      id="giveaway"
+      aria-labelledby="giveaway-title"
+    >
+
+      <div class="wrap">
+
+        <div class="giveaway-badge">
+          5,000,000 NWAV COMMUNITY GIVEAWAY
+        </div>
+
+        <h2 id="giveaway-title">
+          500 Random Winners
+        </h2>
+
+        <p class="lead">
+
+          We are preparing a community giveaway of
+          <strong>5,000,000 NWAV</strong>.
+
+          <strong>500 randomly selected wallets</strong>
+          will receive
+
+          <strong>10,000 NWAV each</strong>.
+
+          Every wallet receives one base entry, with
+          additional entries available through successful referrals.
+
+        </p>
+
+
+        <div class="giveaway-panel">
+
+
+          <!-- GIVEAWAY STATS -->
+
+          <div class="stats">
+
+            <div class="stat">
+              <strong>5M</strong>
+              <small>Total NWAV</small>
+            </div>
+
+            <div class="stat">
+              <strong>500</strong>
+              <small>Random Winners</small>
+            </div>
+
+            <div class="stat">
+              <strong>10K</strong>
+              <small>NWAV Per Winner</small>
+            </div>
+
+            <div class="stat">
+              <strong>5 MAX</strong>
+              <small>Entries Per Wallet</small>
+            </div>
+
+          </div>
+
+
+          <!-- STATUS -->
+
+          <div class="giveaway-status">
+
+            <div>
+
+              <div class="progress-label">
+                GIVEAWAY STATUS
+              </div>
+
+              <div
+                class="progress-count"
+                id="giveaway-status"
+              >
+                COMING SOON
+              </div>
+
+              <div
+                class="progress-track"
+                aria-hidden="true"
+              >
+
+                <div
+                  class="progress-fill"
+                  style="width:0%"
+                ></div>
+
+              </div>
+
+              <p class="tiny">
+                The giveaway entry and distribution system
+                is being prepared and tested before launch.
+              </p>
+
+            </div>
+
+
+            <div class="giveaway-meta">
+
+              <div class="meta-row">
+                <span>Total prize pool</span>
+                <strong>5,000,000 NWAV</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Random winners</span>
+                <strong>500 wallets</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Prize per winner</span>
+                <strong>10,000 NWAV</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Base entry</span>
+                <strong>1 per wallet</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Referral bonus</span>
+                <strong>+1 per successful referral</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Maximum</span>
+                <strong>5 entries</strong>
+              </div>
+
+              <div class="meta-row">
+                <span>Winner selection</span>
+                <strong>Random</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- WALLET -->
+
+          <div class="wallet-action">
+
+            <div class="wallet-copy">
+
+              <h3>
+                Get Ready to Enter
+              </h3>
+
+              <p id="wallet-status">
+
+                Connect your compatible wallet when the
+                official giveaway opens.
+
+                No token transaction will be requested
+                during this preparation stage.
+
+              </p>
+
+            </div>
+
+
+            <button
+              class="wallet-button"
+              id="connect-wallet"
+              type="button"
+            >
+              CONNECT WALLET
+            </button>
+
+          </div>
+
+
+          <!-- REFERRAL -->
+
+          <div
+            class="referral-box"
+            id="referral-box"
+          >
+
+            <h3>
+              🔗 Your Referral Link
+            </h3>
+
+            <p class="tiny">
+              When the giveaway opens, successful referrals
+              can give you additional entries.
+            </p>
+
+            <div
+              class="referral-link"
+              id="referral-link"
+            ></div>
+
+            <button
+              class="copy-button"
+              id="copy-referral"
+              type="button"
+            >
+              COPY REFERRAL LINK
+            </button>
+
+          </div>
+
+
+          <!-- CLAIM / ENTRY -->
+
+          <div class="claim-area">
+
+            <div>
+
+              <strong>
+                🎁 NWAV Giveaway — Coming Soon!
+              </strong>
+
+              <div class="tiny">
+
+                500 random winners will each receive
+                10,000 NWAV.
+
+                Connect your wallet and get ready to enter.
+
+                Referral entries will be available when
+                the giveaway officially opens.
+
+              </div>
+
+            </div>
+
+
+            <button
+              class="claim-button"
+              type="button"
+              disabled
+              aria-disabled="true"
+              title="The NWAV giveaway is being prepared."
+            >
+              ENTER GIVEAWAY — COMING SOON
+            </button>
+
+          </div>
+
+
+          <!-- SECURITY -->
+
+          <div class="security-notice">
+
+            <strong>
+              Security reminder:
+            </strong>
+
+            NEXTWAVE will never ask for your seed phrase
+            or private key.
+
+            Never enter or share either of them.
+
+            Connecting a wallet should only request permission
+            to share its public address.
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         WHY NWAV
+    ========================= -->
 
     <section class="section">
 
       <div class="wrap">
 
-        <h2>Why NEXTWAVE?</h2>
+        <h2>
+          Why NEXTWAVE?
+        </h2>
 
         <p class="lead">
-          We're not pretending to be a huge project.
-          We're early, we're small, and we're building
+          We're early, we're small and we're building
           from the ground up.
         </p>
+
 
         <div class="grid">
 
           <div class="card">
+
             <h3>⛓️ Robinhood Chain</h3>
+
             <p>
-              NEXTWAVE is built on Robinhood Chain and is
-              designed to participate in its growing ecosystem.
+              NEXTWAVE is built on Robinhood Chain
+              and participates in its growing ecosystem.
             </p>
+
           </div>
 
+
           <div class="card">
+
             <h3>💎 Fixed Supply</h3>
+
             <p>
-              The stated total supply of NEXTWAVE is
-              1,000,000,000 NWAV.
+              The stated total supply of NEXTWAVE
+              is 1,000,000,000 NWAV.
             </p>
+
           </div>
 
+
           <div class="card">
+
             <h3>🌱 Early Stage</h3>
+
             <p>
-              NEXTWAVE is still at an early stage, giving the
-              community room to shape its future direction.
+              NEXTWAVE is still at an early stage,
+              giving the community room to shape
+              future initiatives.
             </p>
+
           </div>
 
         </div>
@@ -889,18 +1225,26 @@
     </section>
 
 
-    <!-- ROADMAP -->
+    <!-- =========================
+         ROADMAP
+    ========================= -->
 
-    <section class="section" id="roadmap">
+    <section
+      class="section"
+      id="roadmap"
+    >
 
       <div class="wrap">
 
-        <h2>NEXTWAVE Roadmap</h2>
+        <h2>
+          NEXTWAVE Roadmap
+        </h2>
 
         <p class="lead">
-          No artificial deadlines. The roadmap grows with
-          the community.
+          No artificial deadlines. The roadmap
+          grows with the community.
         </p>
+
 
         <div class="step">
 
@@ -915,6 +1259,7 @@
 
         </div>
 
+
         <div class="step">
 
           <div class="phase">
@@ -928,6 +1273,7 @@
 
         </div>
 
+
         <div class="step">
 
           <div class="phase">
@@ -935,12 +1281,13 @@
           </div>
 
           <p>
-            Expand the website, social presence, community
-            activities and participation in the Robinhood
-            Chain ecosystem.
+            Expand the website, social presence,
+            community activities and participation
+            in the Robinhood Chain ecosystem.
           </p>
 
         </div>
+
 
         <div class="step">
 
@@ -950,8 +1297,8 @@
 
           <p>
             Develop future community-driven initiatives
-            based on real participation, demand and the
-            direction of the community.
+            based on real participation and community
+            direction.
           </p>
 
         </div>
@@ -961,42 +1308,67 @@
     </section>
 
 
-    <!-- COMMUNITY -->
+    <!-- =========================
+         COMMUNITY
+    ========================= -->
 
-    <section class="section" id="community">
+    <section
+      class="section"
+      id="community"
+    >
 
       <div class="wrap">
 
-        <h2>Our Community Principles</h2>
+        <h2>
+          Our Community Principles
+        </h2>
 
         <p class="lead">
           Transparency over hype.
         </p>
 
+
         <div class="grid">
 
           <div class="card">
-            <h3>✓ Real Community</h3>
+
+            <h3>
+              ✓ Real Community
+            </h3>
+
             <p>
               We want genuine participants rather than
               disposable or artificial accounts.
             </p>
+
           </div>
 
-          <div class="card">
-            <h3>✓ No Artificial Volume</h3>
-            <p>
-              We do not promote wash trading or manufactured
-              trading activity as a growth strategy.
-            </p>
-          </div>
 
           <div class="card">
-            <h3>✓ No Guaranteed Returns</h3>
+
+            <h3>
+              ✓ No Artificial Volume
+            </h3>
+
             <p>
-              We do not promise profits, prices, exchange
-              listings or investment returns.
+              We do not promote wash trading or
+              manufactured trading activity.
             </p>
+
+          </div>
+
+
+          <div class="card">
+
+            <h3>
+              ✓ No Guaranteed Returns
+            </h3>
+
+            <p>
+              We do not promise profits, prices,
+              exchange listings or investment returns.
+            </p>
+
           </div>
 
         </div>
@@ -1006,75 +1378,99 @@
     </section>
 
 
-    <!-- WHITEPAPER -->
+    <!-- =========================
+         WHITEPAPER
+    ========================= -->
 
-    <section class="section" id="paper">
+    <section
+      class="section"
+      id="paper"
+    >
 
       <div class="wrap">
 
-        <h2>NEXTWAVE Whitepaper</h2>
+        <h2>
+          NEXTWAVE Whitepaper
+        </h2>
 
         <p class="lead">
           A simple overview of the NEXTWAVE project,
           token and community philosophy.
         </p>
 
+
         <div class="card">
 
-          <h3>1. Project Overview</h3>
+          <h3>
+            1. Project Overview
+          </h3>
 
           <p>
-            NEXTWAVE ($NWAV) is a community-driven memecoin
-            built on Robinhood Chain. The project focuses on
-            memes, community participation, creativity,
-            transparency and building in public.
+            NEXTWAVE ($NWAV) is a community-driven
+            memecoin built on Robinhood Chain.
+            The project focuses on memes, community
+            participation, creativity, transparency
+            and building in public.
           </p>
 
 
-          <h3>2. Token Information</h3>
+          <h3>
+            2. Token Information
+          </h3>
 
           <p>
             The total stated supply is 1,000,000,000 NWAV.
-            The token ticker is $NWAV and the project operates
-            on Robinhood Chain.
+            The token ticker is $NWAV and the project
+            operates on Robinhood Chain.
           </p>
 
 
-          <h3>3. Launch</h3>
+          <h3>
+            3. Community Giveaway
+          </h3>
 
           <p>
-            NEXTWAVE launched through the Pons launchpad and
-            bonding-curve model. Current trading and liquidity
-            information should always be verified through
-            official interfaces.
+            NEXTWAVE is preparing a 5,000,000 NWAV
+            community giveaway consisting of 500
+            randomly selected winners receiving
+            10,000 NWAV each.
           </p>
 
 
-          <h3>4. Community Philosophy</h3>
+          <h3>
+            4. Community Philosophy
+          </h3>
 
           <p>
             The project aims to build genuine community
-            participation through social content, community
-            activities, giveaways and transparent development.
+            participation through social content,
+            community activities, giveaways and
+            transparent development.
           </p>
 
 
-          <h3>5. Growth</h3>
+          <h3>
+            5. Growth
+          </h3>
 
           <p>
-            NEXTWAVE's community growth targets are designed
-            around genuine participation, progressing through
-            milestones such as 50, 100, 250 and 500+ holders.
+            NEXTWAVE's community growth targets are
+            designed around genuine participation.
           </p>
 
 
-          <h3>6. Risk Disclosure</h3>
+          <h3>
+            6. Risk Disclosure
+          </h3>
 
           <p>
-            $NWAV is a high-risk memecoin. Cryptocurrency
-            prices and liquidity can change rapidly. Participants
-            may lose some or all of their capital. Nothing on
-            this website is financial, investment or legal advice.
+            $NWAV is a high-risk memecoin.
+            Cryptocurrency prices and liquidity can
+            change rapidly. Participants may lose some
+            or all of their capital.
+
+            Nothing on this website is financial,
+            investment or legal advice.
           </p>
 
         </div>
@@ -1084,18 +1480,23 @@
     </section>
 
 
-    <!-- OFFICIAL LINKS -->
+    <!-- =========================
+         OFFICIAL LINKS
+    ========================= -->
 
     <section class="section">
 
       <div class="wrap">
 
-        <h2>Official NEXTWAVE Links</h2>
+        <h2>
+          Official NEXTWAVE Links
+        </h2>
 
         <p class="lead">
-          Use official links when researching or interacting
-          with NEXTWAVE.
+          Use official links when researching or
+          interacting with NEXTWAVE.
         </p>
+
 
         <div class="linkbox">
 
@@ -1104,8 +1505,9 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            🌊 Fomo
+            🌊 FOMO
           </a>
+
 
           <a
             href="https://x.com/NEXTWAVENWAV"
@@ -1121,24 +1523,32 @@
 
     </section>
 
+
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer class="footer">
 
     <div class="wrap">
 
-      <b>NEXTWAVE ($NWAV) 🌊</b>
+      <b>
+        NEXTWAVE ($NWAV) 🌊
+      </b>
 
       <p>
-        Robinhood Chain • Community Driven • Still Early • Still Building
+        Robinhood Chain • Community Driven •
+        Still Early • Still Building
       </p>
 
       <p class="tiny">
-        Informational purposes only. $NWAV is a high-risk memecoin.
-        No guaranteed returns. Always do your own research.
+        Informational purposes only.
+        $NWAV is a high-risk memecoin.
+        No guaranteed returns.
+        Always do your own research.
       </p>
 
       <p class="tiny">
@@ -1149,47 +1559,202 @@
 
   </footer>
 
+
+  <!-- =========================
+       WALLET SCRIPT
+  ========================= -->
+
   <script>
+
     (function () {
-      const connectButton = document.getElementById('connect-wallet');
-      const walletStatus = document.getElementById('wallet-status');
 
-      if (!connectButton || !walletStatus) return;
+      const connectButton =
+        document.getElementById("connect-wallet");
 
-      const provider = window.ethereum;
+      const walletStatus =
+        document.getElementById("wallet-status");
+
+      const referralBox =
+        document.getElementById("referral-box");
+
+      const referralLink =
+        document.getElementById("referral-link");
+
+      const copyReferral =
+        document.getElementById("copy-referral");
+
+
+      if (!connectButton || !walletStatus) {
+        return;
+      }
+
+
+      const provider =
+        window.ethereum;
+
 
       function shortAddress(address) {
-        return address.slice(0, 6) + '…' + address.slice(-4);
+
+        return (
+          address.slice(0, 6) +
+          "…" +
+          address.slice(-4)
+        );
+
       }
+
+
+      function createReferralLink(address) {
+
+        return (
+          window.location.origin +
+          window.location.pathname +
+          "?ref=" +
+          encodeURIComponent(address)
+        );
+
+      }
+
 
       function showConnected(address) {
-        walletStatus.textContent = 'Connected: ' + shortAddress(address) + '. Claiming is not live; no transaction will be requested.';
-        connectButton.textContent = 'WALLET CONNECTED';
-        connectButton.disabled = true;
-        connectButton.setAttribute('aria-disabled', 'true');
+
+        walletStatus.innerHTML =
+          "Connected: <span class=\"wallet-connected\">" +
+          shortAddress(address) +
+          "</span><br>" +
+          "Your wallet is connected for preparation. " +
+          "No claim transaction will be requested yet.";
+
+        connectButton.textContent =
+          "WALLET CONNECTED";
+
+        connectButton.disabled =
+          true;
+
+
+        if (referralBox && referralLink) {
+
+          referralLink.textContent =
+            createReferralLink(address);
+
+          referralBox.style.display =
+            "block";
+
+        }
+
       }
 
-      connectButton.addEventListener('click', async function () {
-        if (!provider || !provider.request) {
-          walletStatus.textContent = 'No compatible wallet was detected. Open this page in Trust Wallet or install a compatible browser wallet, then try again.';
-          return;
-        }
 
-        connectButton.disabled = true;
-        connectButton.textContent = 'CONNECTING…';
+      connectButton.addEventListener(
+        "click",
+        async function () {
 
-        try {
-          const accounts = await provider.request({ method: 'eth_requestAccounts' });
-          if (accounts && accounts[0]) showConnected(accounts[0]);
-          else throw new Error('No wallet address was returned.');
-        } catch (error) {
-          walletStatus.textContent = 'Wallet connection was not completed. No information was saved and no transaction was requested.';
-          connectButton.disabled = false;
-          connectButton.textContent = 'CONNECT WALLET';
+          if (!provider || !provider.request) {
+
+            walletStatus.textContent =
+              "No compatible browser wallet was detected. " +
+              "Please open this website in a compatible wallet browser.";
+
+            return;
+
+          }
+
+
+          connectButton.disabled =
+            true;
+
+          connectButton.textContent =
+            "CONNECTING…";
+
+
+          try {
+
+            const accounts =
+              await provider.request({
+                method: "eth_requestAccounts"
+              });
+
+
+            if (
+              accounts &&
+              accounts.length > 0
+            ) {
+
+              showConnected(
+                accounts[0]
+              );
+
+            } else {
+
+              throw new Error(
+                "No wallet address returned."
+              );
+
+            }
+
+          } catch (error) {
+
+            walletStatus.textContent =
+              "Wallet connection was not completed. " +
+              "No token transaction was requested.";
+
+            connectButton.disabled =
+              false;
+
+            connectButton.textContent =
+              "CONNECT WALLET";
+
+          }
+
         }
-      });
-    }());
+      );
+
+
+      if (
+        copyReferral &&
+        referralLink
+      ) {
+
+        copyReferral.addEventListener(
+          "click",
+          async function () {
+
+            try {
+
+              await navigator.clipboard.writeText(
+                referralLink.textContent
+              );
+
+              copyReferral.textContent =
+                "COPIED!";
+
+              setTimeout(
+                function () {
+
+                  copyReferral.textContent =
+                    "COPY REFERRAL LINK";
+
+                },
+                1800
+              );
+
+            } catch (error) {
+
+              copyReferral.textContent =
+                "COPY FAILED";
+
+            }
+
+          }
+        );
+
+      }
+
+
+    })();
+
   </script>
+
 
 </body>
 </html>
